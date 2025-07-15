@@ -1,0 +1,308 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Dashboard Grid */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2d3748;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+/* Goals Section */
+.goals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.goal-item:hover {
+    background-color: #f7fafc;
+}
+
+.goal-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #667eea;
+    cursor: pointer;
+}
+
+.goal-item label {
+    font-size: 1rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Timer Section */
+.timer-display {
+    text-align: center;
+}
+
+.timer-circle {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #e2e8f0;
+    border-top: 8px solid #667eea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.timer-time {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.timer-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.start-btn {
+    background-color: #48bb78;
+    color: white;
+}
+
+.start-btn:hover {
+    background-color: #38a169;
+}
+
+.pause-btn {
+    background-color: #ed8936;
+    color: white;
+}
+
+.pause-btn:hover {
+    background-color: #dd6b20;
+}
+
+.reset-btn {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #c53030;
+}
+
+.timer-mode {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mode-active {
+    color: #667eea;
+    font-weight: 600;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.mode-inactive {
+    color: #a0aec0;
+    font-weight: 500;
+}
+
+/* Weekly Planner */
+.planner-card {
+    overflow: hidden;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.day-column {
+    min-height: 120px;
+    min-width: 0; /* Prevents overflow */
+}
+
+.day-header {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 6px 4px;
+    background-color: #f7fafc;
+    border-radius: 6px;
+}
+
+.day-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.task {
+    background-color: #edf2f7;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #4a5568;
+    border-left: 3px solid #667eea;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Quote Section */
+.quote-content {
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.quote-author {
+    font-size: 1rem;
+    color: #667eea;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .dashboard {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .week-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .timer-circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .timer-time {
+        font-size: 2rem;
+    }
+    
+    .timer-controls {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .timer-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .week-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .quote-text {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusZen - Personal Productivity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">FocusZen</h1>
+            <p class="subtitle">Your Personal Productivity Dashboard</p>
+        </header>
+
+        <!-- Main Dashboard Grid -->
+        <main class="dashboard">
+            <!-- Daily Goals Section -->
+            <section class="card goals-card">
+                <h2 class="card-title">Daily Goals</h2>
+                <div class="goals-list">
+                    <div class="goal-item">
+                        <input type="checkbox" id="goal1" class="goal-checkbox">
+                        <label for="goal1">Complete morning workout</label>
+                    </div>
+                    <div class="goal-item">
+                        <input type="checkbox" id="goal2" class="goal-checkbox">
+                        <label for="goal2">Finish project proposal</label>
+                    </div>
+                    <div class="goal-item">
+                        <input type="checkbox" id="goal3" class="goal-checkbox">
+                        <label for="goal3">Read 30 minutes</label>
+                    </div>
+                    <div class="goal-item">
+                        <input type="checkbox" id="goal4" class="goal-checkbox">
+                        <label for="goal4">Meditate for 10 minutes</label>
+                    </div>
+                    <div class="goal-item">
+                        <input type="checkbox" id="goal5" class="goal-checkbox">
+                        <label for="goal5">Plan tomorrow's tasks</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pomodoro Timer Section -->
+            <section class="card timer-card">
+                <h2 class="card-title">Focus Timer</h2>
+                <div class="timer-display">
+                    <div class="timer-circle">
+                        <span class="timer-time">25:00</span>
+                    </div>
+                    <div class="timer-controls">
+                        <button class="timer-btn start-btn">Start</button>
+                        <button class="timer-btn pause-btn">Pause</button>
+                        <button class="timer-btn reset-btn">Reset</button>
+                    </div>
+                    <div class="timer-mode">
+                        <span class="mode-active">Focus</span>
+                        <span class="mode-inactive">Break</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weekly Planner Section -->
+            <section class="card planner-card">
+                <h2 class="card-title">Weekly Planner</h2>
+                <div class="week-grid">
+                    <div class="day-column">
+                        <h3 class="day-header">Mon</h3>
+                        <div class="day-tasks">
+                            <div class="task">Team meeting 9AM</div>
+                            <div class="task">Code review</div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <h3 class="day-header">Tue</h3>
+                        <div class="day-tasks">
+                            <div class="task">Client call 2PM</div>
+                            <div class="task">Design mockups</div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <h3 class="day-header">Wed</h3>
+                        <div class="day-tasks">
+                            <div class="task">Workshop prep</div>
+                            <div class="task">Documentation</div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <h3 class="day-header">Thu</h3>
+                        <div class="day-tasks">
+                            <div class="task">Presentation</div>
+                            <div class="task">1:1 meetings</div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <h3 class="day-header">Fri</h3>
+                        <div class="day-tasks">
+                            <div class="task">Sprint planning</div>
+                            <div class="task">Week review</div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <h3 class="day-header">Sat</h3>
+                        <div class="day-tasks">
+                            <div class="task">Personal projects</div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <h3 class="day-header">Sun</h3>
+                        <div class="day-tasks">
+                            <div class="task">Rest & recharge</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quote of the Day Section -->
+            <section class="card quote-card">
+                <h2 class="card-title">Daily Inspiration</h2>
+                <div class="quote-content">
+                    <blockquote class="quote-text">
+                        "The way to get started is to quit talking and begin doing."
+                    </blockquote>
+                    <cite class="quote-author">— Walt Disney</cite>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
