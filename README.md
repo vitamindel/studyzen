@@ -125,10 +125,6 @@ FocusZen follows a clean, minimalist design approach:
 
 This project was built for the Kiro Hackathon to demonstrate AI-assisted development workflows. The `.kiro` directory contains all the specifications, hooks, and steering rules used during development.
 
-## 📄 License
-
-MIT License - feel free to use this project as inspiration for your own productivity tools!
-
 ---
 
 **Built with ❤️ using Kiro AI Development Tools**
